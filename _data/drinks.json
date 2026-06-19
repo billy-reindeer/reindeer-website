@@ -10,6 +10,13 @@
           "description": "Nice",
           "glass": "6.00",
           "bottle": "25"
+        },
+        {
+          "name": "Merlot 2",
+          "producer": "Italy",
+          "description": "aergartgrtg",
+          "glass": "5.00",
+          "bottle": "20"
         }
       ]
     },
