@@ -1,0 +1,9 @@
+{
+  "sections": [
+    { "name": "Wine", "format": "wine", "items": [] },
+    { "name": "Cocktails", "format": "list", "items": [] },
+    { "name": "Beer & Cider", "format": "list", "items": [] },
+    { "name": "Spirits", "format": "list", "items": [] },
+    { "name": "Soft Drinks", "format": "list", "items": [] }
+  ]
+}

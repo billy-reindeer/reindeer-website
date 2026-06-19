@@ -1,0 +1,124 @@
+# GitHub backend: no Netlify Identity / Git Gateway required.
+# Decap commits content edits directly to the GitHub repo via the GitHub API.
+# REQUIRES: this site is deployed from the GitHub repo named below, and a GitHub
+# OAuth app is registered (see Netlify dashboard: Site settings > Access control > OAuth).
+backend:
+  name: github
+  repo: billy-reindeer/reindeer-website   # owner: Billy's GitHub account. Repo must be named exactly this when created.
+  branch: main
+
+# Allows running the CMS against local files during development.
+# Only takes effect on localhost (run: npx decap-server). Ignored in production.
+local_backend: true
+
+media_folder: assets/images
+public_folder: /assets/images
+
+collections:
+  - name: events
+    label: Events
+    files:
+      - name: all_events
+        label: All Events
+        file: _data/events.json
+        fields:
+          - label: Events
+            name: events
+            widget: list
+            label_singular: Event
+            summary: "{{fields.title}} — {{fields.date}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Date, name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "DD MMMM YYYY", time_format: false }
+              - { label: Time, name: time, widget: string, hint: "e.g. 7:00pm", required: false }
+              - { label: Description, name: description, widget: text }
+              - { label: Image, name: image, widget: image, required: false, hint: "Optional. Leave blank if no event image." }
+              - { label: Button Label, name: cta_label, widget: string, default: "Book a table" }
+              - { label: Button URL, name: cta_url, widget: string, default: "/book/" }
+              - { label: Featured, name: featured, widget: boolean, default: false, hint: "Featured events show with a moss-coloured accent." }
+
+  - name: menu
+    label: Menu (Food)
+    files:
+      - name: main_menu
+        label: Main Menu
+        file: _data/menu.json
+        description: "The main food menu. Groups appear in order, separated by spacing. No group headings are shown to guests."
+        fields:
+          - label: Menu Groups
+            name: groups
+            widget: list
+            label_singular: Group
+            summary: "{{fields.name}} ({{fields.items.length}} dishes)"
+            fields:
+              - { label: Group Name, name: name, widget: string, hint: "For your reference only. Not shown to guests on the page." }
+              - label: Dishes
+                name: items
+                widget: list
+                label_singular: Dish
+                summary: "{{fields.name}}"
+                required: false
+                fields:
+                  - { label: Dish Name, name: name, widget: string }
+                  - { label: Description, name: description, widget: text, required: false }
+                  - { label: Price, name: price, widget: string, hint: "e.g. 8.50 (no pound sign needed)" }
+
+      - name: sunday_lunch
+        label: Sunday Lunch Menu
+        file: _data/sunday-lunch.json
+        description: "The Sunday lunch menu. Course names (Starters, Mains, Puddings) are shown to guests."
+        fields:
+          - label: Courses
+            name: courses
+            widget: list
+            label_singular: Course
+            summary: "{{fields.name}} ({{fields.items.length}} dishes)"
+            fields:
+              - { label: Course Name, name: name, widget: string, hint: "Shown to guests as a heading, e.g. Starters." }
+              - label: Dishes
+                name: items
+                widget: list
+                label_singular: Dish
+                summary: "{{fields.name}}"
+                required: false
+                fields:
+                  - { label: Dish Name, name: name, widget: string }
+                  - { label: Description, name: description, widget: text, required: false }
+                  - { label: Price, name: price, widget: string, hint: "e.g. 16.00 (no pound sign needed)" }
+
+  - name: drinks
+    label: Drinks
+    files:
+      - name: drinks_list
+        label: Drinks List
+        file: _data/drinks.json
+        description: "The drinks list. Wine uses Glass/Bottle pricing. All other sections use a single price."
+        fields:
+          - label: Sections
+            name: sections
+            widget: list
+            label_singular: Section
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Section Name, name: name, widget: string, hint: "Shown to guests as a heading, e.g. Wine." }
+              - label: Format
+                name: format
+                widget: select
+                options:
+                  - { label: "Wine (Glass / Bottle pricing)", value: wine }
+                  - { label: "Standard (single price)", value: list }
+                default: list
+                hint: "Choose Wine for glass and bottle pricing. Choose Standard for everything else."
+              - label: Items
+                name: items
+                widget: list
+                label_singular: Item
+                summary: "{{fields.name}}"
+                required: false
+                fields:
+                  - { label: Name, name: name, widget: string }
+                  - { label: Producer & Region, name: producer, widget: string, required: false, hint: "Wine only. e.g. Domaine de la Source, Loire." }
+                  - { label: Description, name: description, widget: string, required: false, hint: "Standard items only (cocktails, beer, etc.)." }
+                  - { label: Glass Price, name: glass, widget: string, required: false, hint: "Wine only. e.g. 6.50" }
+                  - { label: Bottle Price, name: bottle, widget: string, required: false, hint: "Wine only. e.g. 26.00" }
+                  - { label: Price, name: price, widget: string, required: false, hint: "Standard items only. e.g. 5.00" }

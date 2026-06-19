@@ -1,0 +1,24 @@
+{
+  "events": [
+    {
+      "title": "Summer Solstice Supper",
+      "date": "2026-06-21",
+      "time": "7:00pm",
+      "description": "A special evening menu celebrating the longest day. Five courses built around the best of the summer harvest, with matched wines from our list.",
+      "image": "",
+      "cta_label": "Book a table",
+      "cta_url": "/book/",
+      "featured": true
+    },
+    {
+      "title": "Sunday Roast with the Team",
+      "date": "2026-07-05",
+      "time": "12:00pm",
+      "description": "Our weekly Sunday roast, featuring dry-aged beef from Dunwood Farms and seasonal sides. Reservations recommended.",
+      "image": "",
+      "cta_label": "Book a table",
+      "cta_url": "/book/",
+      "featured": false
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "courses": [
+    { "name": "Starters", "items": [] },
+    { "name": "Mains", "items": [] },
+    { "name": "Puddings", "items": [] }
+  ]
+}

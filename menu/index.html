@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Menu | The Reindeer Hoveringham</title>
+  <meta name="description" content="The menu at The Reindeer, Hoveringham. Seasonal British cooking in a Nottinghamshire village pub.">
+  <link rel="canonical" href="https://reindeerpub.com/menu/">
+
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://reindeerpub.com/menu/">
+  <meta property="og:title"       content="Menu | The Reindeer Hoveringham">
+  <meta property="og:description" content="Seasonal British cooking in a Nottinghamshire village pub.">
+  <meta property="og:image"       content="https://reindeerpub.com/assets/og/homepage.jpg">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <link rel="icon"             href="/assets/images/favicon.ico" sizes="any">
+  <link rel="icon"             href="/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+
+  <link rel="preload" href="/assets/fonts/alike-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/alike-angular-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://reindeerpub.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Menu", "item": "https://reindeerpub.com/menu/" }
+        ]
+      },
+      {
+        "@type": "FoodEstablishment",
+        "@id": "https://reindeerpub.com/#restaurant",
+        "name": "The Reindeer Hoveringham",
+        "servesCuisine": "British",
+        "hasMenu": "https://reindeerpub.com/menu/"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-nav site-nav--solid" role="banner">
+    <div class="nav__inner">
+
+      <a href="/" class="nav__logo" aria-label="The Reindeer Hoveringham - go to homepage">
+        <img src="/the-reindeer.svg" alt="The Reindeer Hoveringham" class="nav__logo-img" width="120" height="48">
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav__links" role="list">
+
+          <li class="nav__item nav__item--has-dropdown nav__item--active">
+            <button class="nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Food &amp; Drink
+              <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <ul class="nav__dropdown" role="list">
+              <li><a href="/menu/" aria-current="page">Menu</a></li>
+              <li><a href="/sunday-lunch/">Sunday Lunch</a></li>
+              <li><a href="/drinks/">Drinks</a></li>
+            </ul>
+          </li>
+
+          <li class="nav__item nav__item--has-dropdown">
+            <button class="nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              The Pub
+              <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <ul class="nav__dropdown" role="list">
+              <li><a href="/about/">About</a></li>
+              <li><a href="/events/">Events</a></li>
+              <li><a href="/private-hire/">Private Hire</a></li>
+              <li><a href="/gift-vouchers/">Gift Vouchers</a></li>
+            </ul>
+          </li>
+
+          <li class="nav__item nav__item--has-dropdown">
+            <button class="nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Plan Your Visit
+              <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <ul class="nav__dropdown" role="list">
+              <li><a href="/find-us/">Find Us</a></li>
+              <li><a href="/book/">Book a Table</a></li>
+              <li><a href="/contact/">Contact</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="/book/" class="btn btn--ghost nav__cta">Book a Table</a>
+
+      <button class="nav__toggle" id="nav-toggle" aria-controls="nav-drawer" aria-expanded="false" aria-label="Open navigation menu">
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+
+    </div>
+
+    <nav class="nav__drawer" id="nav-drawer" aria-label="Mobile navigation" aria-hidden="true">
+      <div class="nav__drawer-group">
+        <span class="nav__drawer-label">Food &amp; Drink</span>
+        <ul class="nav__drawer-links" role="list">
+          <li><a href="/menu/" aria-current="page">Menu</a></li>
+          <li><a href="/sunday-lunch/">Sunday Lunch</a></li>
+          <li><a href="/drinks/">Drinks</a></li>
+        </ul>
+      </div>
+      <div class="nav__drawer-group">
+        <span class="nav__drawer-label">The Pub</span>
+        <ul class="nav__drawer-links" role="list">
+          <li><a href="/about/">About</a></li>
+          <li><a href="/events/">Events</a></li>
+          <li><a href="/private-hire/">Private Hire</a></li>
+          <li><a href="/gift-vouchers/">Gift Vouchers</a></li>
+        </ul>
+      </div>
+      <div class="nav__drawer-group">
+        <span class="nav__drawer-label">Plan Your Visit</span>
+        <ul class="nav__drawer-links" role="list">
+          <li><a href="/find-us/">Find Us</a></li>
+          <li><a href="/book/">Book a Table</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <a href="/book/" class="btn btn--ghost">Book a Table</a>
+    </nav>
+
+  </header>
+
+
+  <main id="main-content">
+
+    <!-- Split hero: text left, image right -->
+    <section class="split-hero" aria-labelledby="menu-page-heading">
+      <div class="split-hero__inner">
+        <div class="split-hero__text reveal">
+          <span class="eyebrow">Food &amp; Drink</span>
+          <h1 id="menu-page-heading">The Menu</h1>
+          <div class="split-hero__body">
+            <p>Seasonal British cooking, changing with what is good and what is available. A short menu, done properly, rather than a long one done at arm's length.</p>
+          </div>
+        </div>
+        <!-- PLACEHOLDER IMAGE: dish-feature.jpg used until shoot delivers a menu-page image. See PHOTOGRAPHY_BRIEF.md 4.1 -->
+        <div class="split-hero__media">
+          <img
+            src="/assets/images/dish-feature.jpg"
+            alt="A plated dish at The Reindeer Hoveringham"
+            width="800"
+            height="600"
+            fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu content -->
+    <section class="menu-page" aria-label="Food menu">
+      <div class="container">
+        <div class="menu-page__inner">
+
+          <!-- Menu content rendered from /_data/menu.json via fetch. Managed in Decap CMS (Menu > Main Menu).
+               Option C: group names are NOT displayed, groups are separated by spacing only. -->
+          <div id="menu-container" aria-busy="true" aria-live="polite"></div>
+
+          <p class="menu-allergen reveal">
+            Allergen information is available on request. While every care is taken, we cannot guarantee a completely allergen-free environment.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Book CTA -->
+    <div class="menu-cta" aria-label="Book a table">
+      <div class="container">
+        <h2>Ready to visit?</h2>
+        <p>Book a table online and we will have everything ready for you.</p>
+        <a href="/book/" class="btn btn--primary">Book a Table</a>
+      </div>
+    </div>
+
+  </main>
+
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__badge">
+        <img src="/reindeer-full.png" alt="The Reindeer Hoveringham" class="footer__logo" width="120" height="120" loading="lazy">
+      </div>
+
+      <div class="footer__grid">
+        <div class="footer__col footer__col--brand">
+          <span class="footer__heading">Address</span>
+          <address class="footer__address">
+            Main Street, Hoveringham<br>
+            Nottinghamshire, NG14 7JR<br>
+            <a href="tel:07975884881">07975 884881</a><br>
+            <a href="mailto:hello@reindeerpub.com">hello@reindeerpub.com</a>
+          </address>
+        </div>
+        <div class="footer__col footer__col--hours">
+          <span class="footer__heading">Opening Hours</span>
+          <ul class="footer__hours" aria-label="Opening hours">
+            <li>Mon &amp; Tue &middot; Bar 4&ndash;9pm</li>
+            <li>Wed &amp; Thu &middot; Bar 12&ndash;10pm &middot; Kitchen 12&ndash;3 &amp; 5&ndash;9pm</li>
+            <li>Fri &amp; Sat &middot; Bar 12&ndash;11pm &middot; Kitchen 12&ndash;3 &amp; 5&ndash;9pm</li>
+            <li>Sun &middot; Bar 12&ndash;10pm &middot; Kitchen 12&ndash;6pm</li>
+            <li class="footer__hours-note">SHIO Terrace &middot; Thu&ndash;Sat 12&ndash;9pm &middot; Sun 12&ndash;6pm</li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col--social">
+          <span class="footer__heading">Follow Us</span>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/reindeerhoveringham" target="_blank" rel="noopener noreferrer" aria-label="The Reindeer on Instagram (opens in new tab)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              Instagram
+            </a>
+            <a href="https://www.facebook.com/reindeerhoveringham" target="_blank" rel="noopener noreferrer" aria-label="The Reindeer on Facebook (opens in new tab)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__email-wrap">
+        <span class="footer__heading">Stay in Touch</span>
+        <form id="footer-signup-form" name="newsletter-footer" method="POST" data-netlify="true" netlify-honeypot="bot-field-footer" class="footer__signup-form">
+          <input type="hidden" name="form-name" value="newsletter-footer">
+          <p hidden><input name="bot-field-footer" tabindex="-1" aria-hidden="true"></p>
+          <label for="footer-email" class="sr-only">Email address</label>
+          <input type="email" id="footer-email" name="email" placeholder="Your email address" autocomplete="email" required>
+          <button type="submit" class="btn btn--ghost">Sign up</button>
+        </form>
+        <div id="footer-signup-success" class="newsletter__success" role="status" aria-live="polite">You are signed up.</div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__service-charge footer__service-charge--centred">
+          12.5% discretionary service charge applied to all bills and distributed in full to our team.
+          For allergies or dietary requirements, please <a href="/contact/">contact us</a> before visiting.
+        </p>
+        <div class="footer__legal-row">
+          <p class="footer__copyright">&copy; <span class="js-year">2026</span> The Reindeer Hoveringham</p>
+          <ul class="footer__legal" role="list">
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/cookie-policy/">Cookie Policy</a></li>
+            <li><a href="/terms/">Terms &amp; Conditions</a></li>
+            <li>
+              <a href="https://modusmedia.co.uk" class="mm-credit" target="_blank" rel="noopener noreferrer" title="Website by Modus Media, Nottingham" style="display:inline-flex;align-items:center;text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;opacity:0.55;transition:opacity 0.3s;" onmouseenter="this.style.opacity=1" onmouseleave="this.style.opacity=0.55">
+                <span style="font-size:9px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;color:rgba(255,255,255,0.5);padding-right:8px;margin-right:8px;border-right:1px solid rgba(255,255,255,0.2);">Built by</span>
+                <span style="font-size:12px;font-weight:700;letter-spacing:-0.09em;color:#ffffff;">modus media<span style="color:#782525;letter-spacing:0;">.</span></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}</style>
+  <script src="/js/main.js" defer></script>
+
+  <!-- Menu rendered from /_data/menu.json (Decap CMS: Menu > Main Menu). Option C: no group headings. -->
+  <script>
+  (function () {
+    var container = document.getElementById('menu-container');
+    if (!container) return;
+
+    function escapeHtml(str) {
+      return String(str == null ? '' : str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function price(p) {
+      var v = String(p == null ? '' : p).trim();
+      if (!v) return '';
+      return v.charAt(0) === '£' ? escapeHtml(v) : '&pound;' + escapeHtml(v);
+    }
+
+    function renderItem(item) {
+      var html = '<div class="menu-item">';
+      html += '<div>';
+      html += '<span class="menu-item__name">' + escapeHtml(item.name) + '</span>';
+      if (item.description) {
+        html += '<p class="menu-item__desc">' + escapeHtml(item.description) + '</p>';
+      }
+      html += '</div>';
+      if (item.price) {
+        html += '<span class="menu-item__price">' + price(item.price) + '</span>';
+      }
+      html += '</div>';
+      return html;
+    }
+
+    function renderMenu(groups) {
+      container.setAttribute('aria-busy', 'false');
+
+      var hasItems = groups.some(function (g) {
+        return g.items && g.items.length;
+      });
+
+      if (!hasItems) {
+        container.innerHTML =
+          '<p class="menu-page__intro">Our menu is being updated. Please check back shortly or <a href="/contact/" class="text-link">contact us</a> for today\'s dishes.</p>';
+        return;
+      }
+
+      var html = '';
+      groups.forEach(function (group) {
+        if (!group.items || !group.items.length) return;
+        html += '<div class="menu-group reveal">';
+        group.items.forEach(function (item) {
+          html += renderItem(item);
+        });
+        html += '</div>';
+      });
+      container.innerHTML = html;
+    }
+
+    fetch('/_data/menu.json')
+      .then(function (r) { if (!r.ok) throw new Error('fetch failed'); return r.json(); })
+      .then(function (data) { renderMenu(Array.isArray(data.groups) ? data.groups : []); })
+      .catch(function () {
+        container.setAttribute('aria-busy', 'false');
+        container.innerHTML =
+          '<p class="menu-page__intro">Unable to load the menu just now. Please try again shortly or <a href="/contact/" class="text-link">contact us</a>.</p>';
+      });
+  }());
+  </script>
+
+</body>
+</html>
+
+

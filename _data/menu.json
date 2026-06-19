@@ -1,0 +1,8 @@
+{
+  "groups": [
+    { "name": "Snacks", "items": [] },
+    { "name": "Small Plates", "items": [] },
+    { "name": "Larger Plates", "items": [] },
+    { "name": "Puddings", "items": [] }
+  ]
+}

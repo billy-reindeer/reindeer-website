@@ -1,0 +1,52 @@
+# =============================================================
+# The Reindeer — files that must NOT be deployed to the live site.
+# Anything matched here stays local and is never pushed to GitHub /
+# Netlify. The public site only needs the page folders, css/, js/,
+# assets/, _data/, admin/, netlify.toml, index.html and the two root
+# logos (reindeer-full.png, the-reindeer.svg).
+# To force-add an ignored file later: git add -f <file>
+# =============================================================
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editor / tooling ---
+.claude/
+.vscode/
+.idea/
+
+# --- Project working documents (would be publicly readable if deployed) ---
+*.md
+*.docx
+*.doc
+*.txt
+*.csv
+*.zip
+
+# --- Docx / discovery extraction artifacts ---
+pd_extracted/
+unpacked_decisions/
+unpacked_discovery/
+Approved/
+
+# --- Reference / experiment HTML (not part of the site) ---
+The Harwood Arms.html
+The Harwood Arms_files/
+curtain.html
+curtain-demo.html
+modusmedia-dark.html
+modusmedia-light.html
+
+# --- Working screenshots and loose images NOT referenced by the site ---
+Screenshot *.png
+1 menu.jpg
+2 menu.jpg
+3 menu.jpg
+reindeer full.png
+reindeer-colour2.jpg
+the-reindeer-charcole.svg
+the-reindeer-grey.svg
+the-reindeer-white.svg
+the-reindeer-sun-terrace.jpg
