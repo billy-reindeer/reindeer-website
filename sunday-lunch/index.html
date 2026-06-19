@@ -357,7 +357,7 @@
       var html = '';
       courses.forEach(function (course) {
         if (!course.items || !course.items.length) return;
-        html += '<div class="sl-course reveal">';
+        html += '<div class="sl-course">';
         html += '<h3 class="sl-course__heading">' + escapeHtml(course.name) + '</h3>';
         course.items.forEach(function (item) {
           html += renderItem(item);

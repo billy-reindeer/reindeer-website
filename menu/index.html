@@ -333,7 +333,7 @@
       var html = '';
       groups.forEach(function (group) {
         if (!group.items || !group.items.length) return;
-        html += '<div class="menu-group reveal">';
+        html += '<div class="menu-group">';
         group.items.forEach(function (item) {
           html += renderItem(item);
         });

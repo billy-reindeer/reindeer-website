@@ -341,7 +341,7 @@
       sections.forEach(function (section) {
         if (!section.items || !section.items.length) return;
         var id = 'drinks-' + slug(section.name) + '-heading';
-        html += '<div class="drinks-section reveal" aria-labelledby="' + id + '">';
+        html += '<div class="drinks-section" aria-labelledby="' + id + '">';
         html += '<h2 id="' + id + '" class="drinks-section__heading">' + escapeHtml(section.name) + '</h2>';
         html += (section.format === 'wine') ? renderWine(section) : renderList(section);
         html += '</div>';
