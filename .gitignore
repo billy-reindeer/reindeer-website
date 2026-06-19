@@ -22,6 +22,7 @@ desktop.ini
 *.docx
 *.doc
 *.txt
+!robots.txt
 *.csv
 *.zip
 

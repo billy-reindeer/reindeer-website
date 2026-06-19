@@ -19,6 +19,80 @@
   status = 301
   force  = true
 
+# 301 redirects from the old WordPress site (preserve SEO). Must stay ABOVE the /* 404 catch-all.
+[[redirects]]
+  from = "/home/"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/book-a-table/"
+  to = "/book/"
+  status = 301
+[[redirects]]
+  from = "/menus/"
+  to = "/menu/"
+  status = 301
+[[redirects]]
+  from = "/food/"
+  to = "/menu/"
+  status = 301
+[[redirects]]
+  from = "/whats-on/"
+  to = "/events/"
+  status = 301
+[[redirects]]
+  from = "/event-hire/"
+  to = "/private-hire/"
+  status = 301
+[[redirects]]
+  from = "/restaurant-garden/"
+  to = "/private-hire/"
+  status = 301
+[[redirects]]
+  from = "/shop/"
+  to = "/gift-vouchers/"
+  status = 301
+[[redirects]]
+  from = "/basket/"
+  to = "/gift-vouchers/"
+  status = 301
+[[redirects]]
+  from = "/newsletter/"
+  to = "/contact/"
+  status = 301
+[[redirects]]
+  from = "/the-michelin-guide/"
+  to = "/about/"
+  status = 301
+[[redirects]]
+  from = "/frank-sinatra-tribute/"
+  to = "/events/"
+  status = 301
+[[redirects]]
+  from = "/thai-night/"
+  to = "/events/"
+  status = 301
+[[redirects]]
+  from = "/events/category/*"
+  to = "/events/"
+  status = 301
+[[redirects]]
+  from = "/author/*"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/category/*"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/my-account/"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/gallery/"
+  to = "/"
+  status = 301
+
 [[redirects]]
   from   = "/*"
   to     = "/404/index.html"

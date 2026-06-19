@@ -1,0 +1,6 @@
+# robots.txt for The Reindeer Hoveringham
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://reindeerpub.com/sitemap.xml
