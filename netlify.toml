@@ -1,3 +1,4 @@
+# Public repo (free plan: public repos allow unlimited contributors).
 [build]
   publish = "."
 
