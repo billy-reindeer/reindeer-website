@@ -7,6 +7,11 @@ backend:
   repo: billy-reindeer/reindeer-website   # owner: Billy's GitHub account. Repo must be named exactly this when created.
   branch: main
 
+# Branding shown in the CMS: logo above the login button + a link back to the live site
+site_url: https://reindeerpub.com
+display_url: https://reindeerpub.com
+logo_url: /reindeer-full.png
+
 # Allows running the CMS against local files during development.
 # Only takes effect on localhost (run: npx decap-server). Ignored in production.
 local_backend: true
