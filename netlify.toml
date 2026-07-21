@@ -93,6 +93,18 @@
   from = "/gallery/"
   to = "/"
   status = 301
+[[redirects]]
+  from = "/hello-world/"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/2023/05/18/hello-world-2/"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/2025/03/05/hello-world/"
+  to = "/"
+  status = 301
 
 [[redirects]]
   from   = "/*"

@@ -31,7 +31,7 @@ collections:
             name: events
             widget: list
             label_singular: Event
-            summary: "{{fields.title}} — {{fields.date}}"
+            summary: "{{fields.title}}, {{fields.date}}"
             fields:
               - { label: Title, name: title, widget: string }
               - { label: Date, name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "DD MMMM YYYY", time_format: false }

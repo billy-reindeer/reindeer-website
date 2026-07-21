@@ -3446,20 +3446,6 @@ p + p { margin-top: 1.1em; }
    SUNDAY LUNCH PAGE (/sunday-lunch/)
    ============================================================= */
 
-.sl-hero {
-  position: relative;
-  height: clamp(320px, 50vw, 560px);
-  overflow: hidden;
-}
-
-.sl-hero__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-}
-
 .sl-intro {
   padding-block: var(--section-py);
   background: var(--clr-limestone);
@@ -3673,6 +3659,16 @@ p + p { margin-top: 1.1em; }
 .drinks-wine-table td:nth-child(2) {
   color: var(--clr-desc-text);
   font-size: var(--text-small);
+}
+
+/* Optional tasting-note line under a wine name */
+.drinks-wine-table__note {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: var(--text-small);
+  font-style: italic;
+  color: var(--clr-desc-text);
+  line-height: 1.4;
 }
 
 .drinks-wine-table td:last-child {

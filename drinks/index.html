@@ -13,7 +13,7 @@
   <meta property="og:url"         content="https://reindeerpub.com/drinks/">
   <meta property="og:title"       content="Drinks | The Reindeer Hoveringham">
   <meta property="og:description" content="Wines, cocktails, beers, spirits and soft drinks at The Reindeer, Hoveringham.">
-  <meta property="og:image"       content="https://reindeerpub.com/assets/og/homepage.jpg">
+  <meta property="og:image"       content="https://reindeerpub.com/assets/images/og/homepage.jpg">
   <meta name="twitter:card"       content="summary_large_image">
 
   <link rel="icon"             href="/assets/images/favicon.ico" sizes="any">
@@ -296,7 +296,9 @@
       html += '</tr></thead><tbody>';
       section.items.forEach(function (item) {
         html += '<tr>';
-        html += '<td>' + escapeHtml(item.name) + '</td>';
+        html += '<td>' + escapeHtml(item.name);
+        if (item.description) { html += '<span class="drinks-wine-table__note">' + escapeHtml(item.description) + '</span>'; }
+        html += '</td>';
         html += '<td>' + escapeHtml(item.producer || '') + '</td>';
         html += '<td>' + price(item.glass) + '</td>';
         html += '<td>' + price(item.bottle) + '</td>';
