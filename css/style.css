@@ -871,24 +871,40 @@ p + p { margin-top: 1.1em; }
   overflow: hidden;
 }
 
-/* <picture> is inline by default with no size of its own, which breaks
-   height:100% on any <img> inside it that relies on a flex/grid ancestor
-   for sizing (portraits, menu photos, SHIO photos, etc.). display:block
-   alone isn't enough — percentage heights chaining through <picture> to
-   <img> are unreliable across browsers, so the <img> is positioned
-   absolutely to fill <picture> directly instead. */
+/* <picture> is inline by default with no size of its own. This safe
+   default just makes it a block box, it does NOT force absolute
+   positioning here, several sections (portraits, SHIO photos, About
+   page images) already size their <img> correctly via an explicit
+   aspect-ratio on the image itself, and forcing position:absolute
+   site-wide fights that rule, causing images to vanish in some
+   browser engine versions (Opera confirmed, differs from what
+   Chrome/Edge happened to resolve it as). */
 picture {
   display: block;
-  position: relative;
   width: 100%;
   height: 100%;
 }
 
 picture img {
-  position: absolute;
-  inset: 0;
+  display: block;
   width: 100%;
   height: 100%;
+}
+
+/* These specific sections rely on height:100% of a flex/grid ancestor
+   with NO aspect-ratio of their own, percentage heights chaining
+   through <picture> to <img> are unreliable for this pattern, so these
+   are pinned with absolute positioning instead. Do not apply this
+   broadly, see comment above. */
+.menu-photo picture,
+.sunday__img-wrap picture {
+  position: relative;
+}
+
+.menu-photo picture img,
+.sunday__img-wrap picture img {
+  position: absolute;
+  inset: 0;
 }
 
 .menu-photo img {
