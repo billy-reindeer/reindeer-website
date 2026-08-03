@@ -1348,7 +1348,7 @@ picture img {
 
 .person__img-wrap img {
   width: 100%;
-  aspect-ratio: 8 / 5;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center top;
   display: block;
@@ -1386,7 +1386,7 @@ picture img {
 
 /* Billy featured — same crop, consistent row height */
 .person--featured .person__img-wrap img {
-  aspect-ratio: 8 / 5;
+  aspect-ratio: 4 / 5;
 }
 
 .person--featured .person__name {
