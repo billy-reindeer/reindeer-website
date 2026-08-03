@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -13,7 +13,7 @@
   <meta property="og:url"         content="https://reindeerpub.com/menu/">
   <meta property="og:title"       content="Menu | The Reindeer Hoveringham">
   <meta property="og:description" content="Seasonal British cooking in a Nottinghamshire village pub.">
-  <meta property="og:image"       content="https://reindeerpub.com/assets/og/homepage.jpg">
+  <meta property="og:image"       content="https://reindeerpub.com/assets/images/og/homepage.jpg">
   <meta name="twitter:card"       content="summary_large_image">
 
   <link rel="icon"             href="/assets/images/favicon.ico" sizes="any">
@@ -162,12 +162,16 @@
         </div>
         <!-- PLACEHOLDER IMAGE: dish-feature.jpg used until shoot delivers a menu-page image. See PHOTOGRAPHY_BRIEF.md 4.1 -->
         <div class="split-hero__media">
-          <img
-            src="/assets/images/dish-feature.jpg"
-            alt="A plated dish at The Reindeer Hoveringham"
-            width="800"
-            height="600"
-            fetchpriority="high">
+          <picture>
+            <source srcset="/assets/images/dish-feature.avif" type="image/avif">
+            <source srcset="/assets/images/dish-feature.webp" type="image/webp">
+            <img
+              src="/assets/images/dish-feature.jpg"
+              alt="A plated dish at The Reindeer Hoveringham"
+              width="800"
+              height="600"
+              fetchpriority="high">
+          </picture>
         </div>
       </div>
     </section>
@@ -214,7 +218,7 @@
           <address class="footer__address">
             Main Street, Hoveringham<br>
             Nottinghamshire, NG14 7JR<br>
-            <a href="tel:07975884881">07975 884881</a><br>
+            <a href="tel:+441159346071">0115 934 6071</a><br>
             <a href="mailto:hello@reindeerpub.com">hello@reindeerpub.com</a>
           </address>
         </div>

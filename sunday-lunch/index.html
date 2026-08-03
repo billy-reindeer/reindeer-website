@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -13,7 +13,7 @@
   <meta property="og:url"         content="https://reindeerpub.com/sunday-lunch/">
   <meta property="og:title"       content="Sunday Lunch | The Reindeer Hoveringham">
   <meta property="og:description" content="A proper Sunday roast with starters, mains and puddings, served every Sunday from 12 noon until 6pm.">
-  <meta property="og:image"       content="https://reindeerpub.com/assets/og/homepage.jpg">
+  <meta property="og:image"       content="https://reindeerpub.com/assets/images/og/homepage.jpg">
   <meta name="twitter:card"       content="summary_large_image">
 
   <link rel="icon"             href="/assets/images/favicon.ico" sizes="any">
@@ -172,12 +172,16 @@
         </div>
         <!-- PLACEHOLDER IMAGE: terrace-wide.jpg used until shoot delivers sunday-lunch-hero.jpg (terrace, cricket ground). See PHOTOGRAPHY_BRIEF.md 3.5 -->
         <div class="split-hero__media">
-          <img
-            src="/assets/images/terrace-wide.jpg"
-            alt="The terrace at The Reindeer Hoveringham on a Sunday afternoon"
-            width="800"
-            height="600"
-            fetchpriority="high">
+          <picture>
+            <source srcset="/assets/images/terrace-wide.avif" type="image/avif">
+            <source srcset="/assets/images/terrace-wide.webp" type="image/webp">
+            <img
+              src="/assets/images/terrace-wide.jpg"
+              alt="The terrace at The Reindeer Hoveringham on a Sunday afternoon"
+              width="800"
+              height="600"
+              fetchpriority="high">
+          </picture>
         </div>
       </div>
     </section>
@@ -202,12 +206,16 @@
 
     <!-- Feature image -->
     <div class="sl-feature" aria-hidden="true">
-      <img
-        src="/assets/images/sunday-roast.jpg"
-        alt=""
-        width="1440"
-        height="480"
-        loading="lazy">
+      <picture>
+        <source srcset="/assets/images/sunday-roast.avif" type="image/avif">
+        <source srcset="/assets/images/sunday-roast.webp" type="image/webp">
+        <img
+          src="/assets/images/sunday-roast.jpg"
+          alt=""
+          width="1440"
+          height="480"
+          loading="lazy">
+      </picture>
     </div>
 
     <!-- Book CTA -->
@@ -238,7 +246,7 @@
           <address class="footer__address">
             Main Street, Hoveringham<br>
             Nottinghamshire, NG14 7JR<br>
-            <a href="tel:07975884881">07975 884881</a><br>
+            <a href="tel:+441159346071">0115 934 6071</a><br>
             <a href="mailto:hello@reindeerpub.com">hello@reindeerpub.com</a>
           </address>
         </div>

@@ -4023,3 +4023,118 @@ p + p { margin-top: 1.1em; }
     padding: var(--section-py) clamp(1.25rem, 4vw, 3rem);
   }
 }
+
+
+/* ═══════════════════════════════════════════════════════════
+   TOAST BOOKING WIDGET — brand overrides
+   Toast injects its own <style> tag at runtime; these rules are
+   scoped to #toast-booking-widget and use !important so they win
+   regardless of when Toast's script injects its stylesheet.
+   ═══════════════════════════════════════════════════════════ */
+#toast-booking-widget .toast-reserve-btn {
+  background-color: var(--clr-green) !important;
+  font-family: var(--font-body) !important;
+}
+
+#toast-booking-widget .toast-reserve-btn:hover {
+  background-color: var(--clr-green-mid) !important;
+}
+
+#toast-booking-widget .toast-booking-widget__heading {
+  font-family: var(--font-display) !important;
+  color: var(--clr-charcoal) !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   COOKIE CONSENT BANNER
+   z-index sits just below the curtain intro (1100), so on the
+   homepage it stays hidden until the curtain is dismissed.
+   ═══════════════════════════════════════════════════════════ */
+.cookie-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1050;
+  background: var(--clr-green);
+  color: var(--clr-limestone);
+  padding: var(--sp-3) var(--sp-2);
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(100%);
+  transition: transform 0.4s var(--ease-out);
+}
+
+.cookie-banner.is-visible {
+  transform: translateY(0);
+}
+
+.cookie-banner__inner {
+  max-width: var(--w-wide);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-2);
+}
+
+.cookie-banner__text {
+  font-size: var(--text-small);
+  line-height: 1.5;
+  margin: 0;
+  flex: 1 1 280px;
+}
+
+.cookie-banner__link {
+  color: var(--clr-cream);
+  text-decoration: underline;
+}
+
+.cookie-banner__actions {
+  display: flex;
+  gap: var(--sp-2);
+  flex-shrink: 0;
+}
+
+.cookie-banner__accept,
+.cookie-banner__decline {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  padding: 0.6rem 1.25rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.cookie-banner__accept {
+  background: var(--clr-cream);
+  color: var(--clr-charcoal);
+  border: none;
+}
+
+.cookie-banner__decline {
+  background: transparent;
+  color: var(--clr-limestone);
+  border: 1px solid rgba(246, 243, 236, 0.4);
+}
+
+.cookie-banner__accept:hover,
+.cookie-banner__decline:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 640px) {
+  .cookie-banner__inner {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: var(--sp-3);
+  }
+  .cookie-banner__text {
+    flex: 0 0 auto;
+  }
+  .cookie-banner__actions {
+    justify-content: flex-end;
+  }
+}

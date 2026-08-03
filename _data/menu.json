@@ -1,8 +1,49 @@
 {
   "groups": [
-    { "name": "Snacks", "items": [] },
-    { "name": "Small Plates", "items": [] },
-    { "name": "Larger Plates", "items": [] },
-    { "name": "Puddings", "items": [] }
+    {
+      "name": "Snacks",
+      "items": [
+        { "name": "Gordal olives (V)", "price": "5" },
+        { "name": "Wild mushroom croquettes, old winchester (2pc) (V)", "price": "4 ea" },
+        { "name": "Wild boar, pork & red wine salami", "price": "7" },
+        { "name": "Hash brown, Cornish bluefin tuna, lardo (2pc)", "price": "6 ea" }
+      ]
+    },
+    {
+      "name": "Small Plates",
+      "items": [
+        { "name": "Fried chicken thigh, buffalo, dashi ranch", "price": "8.5" },
+        { "name": "Spiced Cornish crab, crumpet, confit garlic, lobster bisque", "price": "14.5" },
+        { "name": "BBQ lamb cutlets, gochujang, herb yoghurt", "price": "16" },
+        { "name": "Isle of white tomato tart, shiso, basil, goats curd (V)", "price": "12" }
+      ]
+    },
+    {
+      "name": "Larger Plates",
+      "items": [
+        { "name": "Battered haddock and chips, mushy peas, seaweed tartar sauce", "price": "22" },
+        { "name": "Pea and ricotta agnolotti, old winchester, courgette (V)", "price": "21" },
+        { "name": "Roast chicken breast, guanciale stuffed wing, smoked mash, tarragon", "price": "25" },
+        { "name": "Dunwood farms salt aged rib eye, au poivre, shallot puree, triple cooked chips", "price": "38" },
+        { "name": "Market fish, confit potatoes, smoked eel, champagne sauce (market price, ask your server)", "price": "" }
+      ]
+    },
+    {
+      "name": "Sides",
+      "items": [
+        { "name": "Triple cooked chips (V)", "price": "6" },
+        { "name": "Buttered jersey royal potatoes (V)", "price": "5" },
+        { "name": "Seasonal greens (V)", "price": "5" },
+        { "name": "Mixed salad (V)", "price": "4" }
+      ]
+    },
+    {
+      "name": "Puddings",
+      "items": [
+        { "name": "Miso caramel tart, brown butter ice cream (V)", "price": "9" },
+        { "name": "Mango parfait, white chocolate, coconut ice cream (V)", "price": "9" },
+        { "name": "Selection of 5 cheeses, biscuits and crackers (V)", "price": "13" }
+      ]
+    }
   ]
 }

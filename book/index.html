@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,13 +7,13 @@
 
   <!-- Primary SEO -->
   <title>Book a Table | The Reindeer Hoveringham</title>
-  <meta name="description" content="Reserve a table at The Reindeer Hoveringham. Book online or call 07975 884 881. Walk-ins welcome, subject to availability.">
+  <meta name="description" content="Reserve a table at The Reindeer Hoveringham. Book online or call 0115 934 6071. Walk-ins welcome, subject to availability.">
   <link rel="canonical" href="https://reindeerpub.com/book/">
 
   <!-- Open Graph -->
   <meta property="og:type"        content="website">
   <meta property="og:title"       content="Book a Table | The Reindeer Hoveringham">
-  <meta property="og:description" content="Reserve a table at The Reindeer Hoveringham. Book online or call 07975 884 881.">
+  <meta property="og:description" content="Reserve a table at The Reindeer Hoveringham. Book online or call 0115 934 6071.">
   <meta property="og:url"         content="https://reindeerpub.com/book/">
   <meta property="og:site_name"   content="The Reindeer Hoveringham">
   <meta property="og:image"       content="https://reindeerpub.com/assets/images/og/homepage.jpg">
@@ -24,7 +24,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card"        content="summary_large_image">
   <meta name="twitter:title"       content="Book a Table | The Reindeer Hoveringham">
-  <meta name="twitter:description" content="Reserve a table at The Reindeer Hoveringham. Book online or call 07975 884 881.">
+  <meta name="twitter:description" content="Reserve a table at The Reindeer Hoveringham. Book online or call 0115 934 6071.">
   <meta name="twitter:image"       content="https://reindeerpub.com/assets/images/og/homepage.jpg">
 
   <!-- Favicon -->
@@ -77,7 +77,7 @@
   <header class="site-nav site-nav--solid" role="banner">
     <div class="nav__inner">
 
-      <a href="/" class="nav__logo" aria-label="The Reindeer Hoveringham — go to homepage">
+      <a href="/" class="nav__logo" aria-label="The Reindeer Hoveringham, go to homepage">
         <img
           src="/the-reindeer.svg"
           alt="The Reindeer Hoveringham"
@@ -224,13 +224,12 @@
         <h2 class="sr-only" id="book-widget-heading">Online booking</h2>
 
         <!-- TOAST WIDGET LOADS HERE -->
-        <!-- Replace this placeholder div with the Toast embed script when Toast is active -->
-        <div class="book-widget-placeholder" aria-label="Booking widget loading area">
-          <div class="book-widget-placeholder__inner">
-            <p class="book-widget-placeholder__label">Booking widget coming soon</p>
-            <p class="book-widget-placeholder__sub">In the meantime, please call us on <a href="tel:07975884881">07975 884 881</a> to reserve a table.</p>
-          </div>
-        </div>
+        <div id="toast-booking-widget"></div>
+        <script
+          src="https://toast.app/scripts/widgets/reserve.js"
+          data-restaurant-guid="20adef79-9670-4ccd-b99c-769b5fabeaa7"
+          async>
+        </script>
         <!-- END TOAST WIDGET -->
 
       </div>
@@ -245,7 +244,7 @@
 
           <div class="book-note">
             <h3 class="book-note__title">Large groups</h3>
-            <p class="book-note__body">For groups of more than 8, please <a href="/contact/" class="text-link text-link--moss">contact us directly</a> or call <a href="tel:07975884881" class="text-link text-link--moss">07975 884 881</a>. This lets us manage availability and discuss any specific requirements.</p>
+            <p class="book-note__body">For groups of more than 8, please <a href="/contact/" class="text-link text-link--moss">contact us directly</a> or call <a href="tel:+441159346071" class="text-link text-link--moss">0115 934 6071</a>. This lets us manage availability and discuss any specific requirements.</p>
           </div>
 
           <div class="book-note">
@@ -265,7 +264,7 @@
 
           <div class="book-note">
             <h3 class="book-note__title">Cancellations</h3>
-            <p class="book-note__body">We require at least 24 hours notice to cancel or amend a booking. If you need to change your plans, please call us on <a href="tel:07975884881" class="text-link text-link--moss">07975 884 881</a> or manage your booking online.</p>
+            <p class="book-note__body">We require at least 24 hours notice to cancel or amend a booking. If you need to change your plans, please call us on <a href="tel:+441159346071" class="text-link text-link--moss">0115 934 6071</a> or manage your booking online.</p>
           </div>
 
         </div>
@@ -281,7 +280,7 @@
             <p class="book-phone-strip__label">Prefer to call?</p>
             <p class="book-phone-strip__sub">Our team will be happy to help.</p>
           </div>
-          <a href="tel:07975884881" class="book-phone-strip__number">07975 884 881</a>
+          <a href="tel:+441159346071" class="book-phone-strip__number">0115 934 6071</a>
         </div>
       </div>
     </section>
@@ -315,7 +314,7 @@
           <address class="footer__address">
             Main Street, Hoveringham<br>
             Nottinghamshire, NG14 7JR<br>
-            <a href="tel:07975884881">07975 884881</a><br>
+            <a href="tel:+441159346071">0115 934 6071</a><br>
             <a href="mailto:hello@reindeerpub.com">hello@reindeerpub.com</a>
           </address>
         </div>

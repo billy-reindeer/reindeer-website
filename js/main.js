@@ -335,6 +335,84 @@
 
 
   /* ----------------------------------------------------------
+     7. COOKIE CONSENT & ANALYTICS
+  ---------------------------------------------------------- */
+
+  var GA_MEASUREMENT_ID = 'G-6S2W14GHDB';
+  var CONSENT_KEY = 'reindeer_cookie_consent';
+
+  function loadAnalytics() {
+    if (window.__gaLoaded) return;
+    window.__gaLoaded = true;
+
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_MEASUREMENT_ID;
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', GA_MEASUREMENT_ID);
+  }
+
+  function initCookieConsent() {
+    var consent = null;
+    try {
+      consent = window.localStorage.getItem(CONSENT_KEY);
+    } catch (e) { /* localStorage unavailable — treat as no choice made */ }
+
+    if (consent === 'accepted') {
+      loadAnalytics();
+      return;
+    }
+    if (consent === 'declined') {
+      return;
+    }
+
+    /* No choice recorded yet — show the banner */
+    var banner = document.createElement('div');
+    banner.className = 'cookie-banner';
+    banner.setAttribute('role', 'dialog');
+    banner.setAttribute('aria-label', 'Cookie consent');
+    banner.innerHTML =
+      '<div class="cookie-banner__inner">' +
+        '<p class="cookie-banner__text">A single analytics cookie helps us understand which pages are useful. No ads, no data sold, no tracking beyond this site. Your choice either way, the site works the same. <a href="/cookie-policy/" class="cookie-banner__link">Cookie Policy</a></p>' +
+        '<div class="cookie-banner__actions">' +
+          '<button type="button" class="cookie-banner__decline">Decline</button>' +
+          '<button type="button" class="cookie-banner__accept">Accept</button>' +
+        '</div>' +
+      '</div>';
+
+    document.body.appendChild(banner);
+
+    /* Double rAF so the initial transform is painted before transitioning in */
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        banner.classList.add('is-visible');
+      });
+    });
+
+    function setConsent(value) {
+      try { window.localStorage.setItem(CONSENT_KEY, value); } catch (e) {}
+      banner.classList.remove('is-visible');
+      setTimeout(function () {
+        if (banner.parentNode) banner.parentNode.removeChild(banner);
+      }, 450);
+    }
+
+    $('.cookie-banner__accept', banner).addEventListener('click', function () {
+      setConsent('accepted');
+      loadAnalytics();
+    });
+
+    $('.cookie-banner__decline', banner).addEventListener('click', function () {
+      setConsent('declined');
+    });
+  }
+
+
+  /* ----------------------------------------------------------
      INIT
   ---------------------------------------------------------- */
 
@@ -346,6 +424,7 @@
     initScrollReveal();
     initNewsletterForm();
     initFooterYear();
+    initCookieConsent();
   });
 
 }());
