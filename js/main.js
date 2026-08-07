@@ -338,7 +338,7 @@
      7. COOKIE CONSENT & ANALYTICS
   ---------------------------------------------------------- */
 
-  var GA_MEASUREMENT_ID = 'G-6S2W14GHDB';
+  var GA_MEASUREMENT_ID = 'G-ZFV9DXLD3Q';
   var CONSENT_KEY = 'reindeer_cookie_consent';
 
   function loadAnalytics() {
