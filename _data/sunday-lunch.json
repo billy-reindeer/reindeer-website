@@ -1,7 +1,13 @@
 {
   "courses": [
     {
-      "name": "2 courses £34 | 3 courses £40"
+      "name": "2 courses £34 | 3 courses £40",
+      "items": [
+        {
+          "name": " ",
+          "price": " "
+        }
+      ]
     },
     {
       "name": "Starters",
@@ -62,7 +68,7 @@
           "price": " "
         },
         {
-          "description": "+ £5",
+          "description": "All side dishes are £5",
           "name": " ",
           "price": " "
         }
