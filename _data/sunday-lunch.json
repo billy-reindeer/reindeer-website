@@ -2,12 +2,7 @@
   "courses": [
     {
       "name": "2 courses £34 | 3 courses £40",
-      "items": [
-        {
-          "name": " ",
-          "price": " "
-        }
-      ]
+      "items": []
     },
     {
       "name": "Starters",
@@ -91,7 +86,6 @@
           "price": " "
         }
       ]
-    },
-    {}
+    }
   ]
 }
