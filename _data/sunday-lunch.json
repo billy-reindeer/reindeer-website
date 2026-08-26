@@ -1,90 +1,42 @@
 {
+  "price_note": [
+    { "label": "2 courses", "price": "34" },
+    { "label": "3 courses", "price": "40" }
+  ],
   "courses": [
-    {
-      "name": "2 courses £34 | 3 courses £40",
-      "items": []
-    },
     {
       "name": "Starters",
       "items": [
-        {
-          "name": "Soup of the week (VE)",
-          "price": " "
-        },
-        {
-          "name": "Fried chicken thigh, buffalo sauce, nori ranch",
-          "price": " "
-        },
-        {
-          "name": "Spiced cornish crab, crumpet, confit garlic, red thai bisque",
-          "price": " "
-        }
+        { "name": "Soup of the week (VE)" },
+        { "name": "Fried chicken thigh, buffalo sauce, nori ranch" },
+        { "name": "Spiced cornish crab, crumpet, confit garlic, red thai bisque" }
       ]
     },
     {
       "name": "Mains",
+      "note": "All of our roast dinners are served with BBQ glazed carrots, clotted cream roast potatoes, seasonal vegetables, yorkshire pudding and gravy.",
       "items": [
-        {
-          "name": "Dry-aged sirloin of Dunwood Farms beef",
-          "price": " "
-        },
-        {
-          "name": "Roast stuffed pork belly",
-          "price": " "
-        },
-        {
-          "name": "Roast corn-fed chicken breast",
-          "price": " "
-        },
-        {
-          "name": "Wild mushroom pithivier (VE)",
-          "price": " "
-        },
-        {
-          "description": "All of our roast dinners are served with  BBQ glazed carrots,  clotted cream roast potatoes, seasonal vegetables, yorkshire pudding and gravy.",
-          "name": " ",
-          "price": " "
-        }
+        { "name": "Dry-aged sirloin of Dunwood Farms beef" },
+        { "name": "Roast stuffed pork belly" },
+        { "name": "Roast corn-fed chicken breast" },
+        { "name": "Wild mushroom pithivier (VE)" }
       ]
     },
     {
       "name": "Side dishes",
+      "note": "All side dishes are £5",
       "items": [
-        {
-          "name": "Baked cauliflower cheese",
-          "price": " "
-        },
-        {
-          "name": "Roast potatoes",
-          "price": " "
-        },
-        {
-          "name": "Seasonal greens",
-          "price": " "
-        },
-        {
-          "description": "All side dishes are £5",
-          "name": " ",
-          "price": " "
-        }
+        { "name": "Baked cauliflower cheese" },
+        { "name": "Roast potatoes" },
+        { "name": "Seasonal greens" }
       ]
     },
     {
       "name": "Puddings",
       "items": [
-        {
-          "name": "Sticky toffee pudding (V)",
-          "price": " "
-        },
-        {
-          "name": "Mango parfait, white chocolate, coconut (V)",
-          "price": " "
-        },
-        {
-          "name": "A selection of 5 local cheeses, biscuits & crackers ",
-          "description": "+ £7 supplement",
-          "price": " "
-        }
+        { "name": "Sticky toffee pudding (V)" },
+        { "name": "Mango parfait, white chocolate, coconut (V)" },
+        { "name": "A selection of 5 local cheeses, biscuits & crackers", "description": "+ £7 supplement" }
       ]
     }
   ]

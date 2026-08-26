@@ -3532,10 +3532,41 @@ picture img {
   font-family: var(--font-display);
   font-size: var(--text-h3);
   color: var(--clr-charcoal);
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: var(--sp-4);
   padding-bottom: var(--sp-2);
   border-bottom: 1px solid rgba(44, 42, 39, 0.15);
+}
+
+.sl-course__note {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  font-style: italic;
+  color: var(--clr-desc-text);
+  line-height: 1.6;
+  margin-bottom: var(--sp-3);
+}
+
+.sl-price-note {
+  margin-bottom: var(--sp-8);
+  padding-bottom: var(--sp-4);
+  border-bottom: 1px solid rgba(44, 42, 39, 0.15);
+}
+
+.sl-price-note .sl-item:last-child {
+  border-bottom: none;
+}
+
+.sl-price-note .sl-item__name {
+  font-family: var(--font-display);
+  font-size: var(--text-h3);
+  font-weight: 700;
+}
+
+.sl-price-note .sl-item__price {
+  font-family: var(--font-display);
+  font-size: var(--text-h3);
+  font-weight: 700;
 }
 
 .sl-item {
@@ -3582,9 +3613,17 @@ picture img {
   border-top: 1px solid rgba(44, 42, 39, 0.1);
 }
 
+/* Fixed 2:1 ratio, not viewport-scaled: this element is full-bleed with no
+   width cap, so a vw-based height let the crop ratio grow unbounded on wide
+   screens (3:1 at 1440px, 5.3:1 at 2560px) — no single photo composes for
+   that whole range. aspect-ratio keeps it a constant, sourceable 2:1 up to
+   1440px wide, then max-height stops it growing dramatically beyond that.
+   min-height stops it collapsing too short on mobile. */
 .sl-feature {
   overflow: hidden;
-  max-height: 480px;
+  aspect-ratio: 2 / 1;
+  min-height: 220px;
+  max-height: 720px;
 }
 
 .sl-feature img {
@@ -3656,7 +3695,7 @@ picture img {
   font-family: var(--font-display);
   font-size: var(--text-h2);
   color: var(--clr-charcoal);
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: var(--sp-6);
 }
 
@@ -3843,6 +3882,59 @@ picture img {
   font-size: var(--text-small);
   color: var(--clr-desc-text);
   line-height: 1.6;
+}
+
+.gv-buy {
+  padding-bottom: var(--section-py);
+  background: white;
+}
+
+.gv-buy__card {
+  max-width: 420px;
+  margin-inline: auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 28px rgba(28, 35, 51, 0.1);
+  padding: var(--sp-8) var(--sp-6);
+  text-align: center;
+}
+
+.gv-buy__label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--text-eyebrow);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--clr-desc-text);
+  margin-bottom: var(--sp-4);
+}
+
+.gv-buy__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  background-color: var(--clr-green);
+  color: var(--clr-limestone);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  font-weight: 700;
+  padding: 1.15rem 2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color 200ms var(--ease-out);
+}
+
+.gv-buy__btn:hover {
+  background-color: var(--clr-green-mid);
+}
+
+.gv-buy__note {
+  display: block;
+  margin-top: var(--sp-3);
+  font-size: var(--text-small);
+  color: var(--clr-desc-text);
 }
 
 .gv-how {

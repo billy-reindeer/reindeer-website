@@ -1,0 +1,22 @@
+{
+  "hero_headline": "Bar Now Open",
+  "hero_subtext": "Kitchen opening 10th July 2026 · Bookings now live",
+  "service_charge_percent": "12",
+  "gift_voucher_url": "https://order.toasttab.com/egiftcards/the-reindeer-main-street",
+  "phone_display": "0115 934 6071",
+  "phone_href": "tel:+441159346071",
+  "email": "hello@reindeerpub.com",
+  "email_href": "mailto:hello@reindeerpub.com",
+  "address_line1": "Main Street, Hoveringham",
+  "address_line2": "Nottinghamshire, NG14 7JR",
+  "instagram_url": "https://www.instagram.com/reindeerhoveringham",
+  "facebook_url": "https://www.facebook.com/reindeerhoveringham",
+  "hours": [
+    { "line": "Mon & Tue · Bar 4–9pm" },
+    { "line": "Wed · Bar 12–10pm · Kitchen 5–9pm" },
+    { "line": "Thu · Bar 12–10pm · Kitchen 12–3 & 5–9pm" },
+    { "line": "Fri & Sat · Bar 12–11pm · Kitchen 12–3 & 5–9pm" },
+    { "line": "Sun · Bar 12–10pm · Kitchen 12–6pm" }
+  ],
+  "hours_note": "SHIO Terrace · Thu–Sat 4–9pm"
+}

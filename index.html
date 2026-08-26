@@ -310,8 +310,8 @@
 
       <div class="hero__content container">
         <span class="hero__eyebrow">Village gastropub &middot; Hoveringham, Nottinghamshire</span>
-        <h1 class="hero__title">Bar Now Open</h1>
-        <p class="hero__announce">Kitchen opening 10th July 2026 &middot; Bookings now live</p>
+        <h1 class="hero__title" data-site-text="hero_headline">Bar Now Open</h1>
+        <p class="hero__announce" data-site-text="hero_subtext">Kitchen opening 10th July 2026 &middot; Bookings now live</p>
         <div class="hero__actions">
           <a href="/book/" class="btn btn--ghost">Reserve a Table</a>
           <a href="#menu" class="text-link text-link--light">See what we cook</a>
@@ -342,10 +342,11 @@
           </p>
           <div class="philosophy__hours reveal">
             <p>Mon &amp; Tue &middot; Bar 4&ndash;9pm</p>
-            <p>Wed &amp; Thu &middot; Bar 12&ndash;10pm &middot; Kitchen 12&ndash;3 &amp; 5&ndash;9pm</p>
+            <p>Wed &middot; Bar 12&ndash;10pm &middot; Kitchen 5&ndash;9pm</p>
+            <p>Thu &middot; Bar 12&ndash;10pm &middot; Kitchen 12&ndash;3 &amp; 5&ndash;9pm</p>
             <p>Fri &amp; Sat &middot; Bar 12&ndash;11pm &middot; Kitchen 12&ndash;3 &amp; 5&ndash;9pm</p>
             <p>Sun &middot; Bar 12&ndash;10pm &middot; Kitchen 12&ndash;6pm</p>
-            <p>SHIO Terrace &middot; Thu&ndash;Sat 12&ndash;9pm &middot; Sun 12&ndash;6pm</p>
+            <p>SHIO Terrace &middot; Thu&ndash;Sat 4&ndash;9pm</p>
           </div>
         </div>
       </div>
@@ -413,9 +414,9 @@
             <h2 id="menu-heading" class="reveal">What We Cook</h2>
 
             <div class="menu-editorial-text reveal">
-              <p>Each menu is built around the finest seasonal ingredients available that week. Dry-aged beef from Dunwood Farms in Staffordshire. Fresh seafood from Flying Fish Cornwall. Producers we know and trust, ingredients that earn their place.</p>
+              <p>Each menu is built around the finest seasonal ingredients available that week. Dry-aged beef from Dunwood Farms in Staffordshire. Fresh seafood from Flying Fish in Cornwall. Producers we know and trust, ingredients that earn their place.</p>
               <p>There are no signature dishes and no standing menu. If something better comes along, the menu changes.</p>
-              <p class="menu-service-line">Lunch &amp; Dinner &middot; Wednesday&ndash;Saturday &middot; Set Lunch from &pound;27 &middot; Sunday Lunch from &pound;33</p>
+              <p class="menu-service-line">Dinner Wednesday &middot; Lunch &amp; Dinner Thursday&ndash;Saturday &middot; Sunday Lunch from &pound;34</p>
             </div>
 
             <div class="menu-actions reveal">
@@ -480,18 +481,18 @@
       <div class="container">
         <div class="sunday__layout">
 
-          <!-- PHOTOGRAPHY: Dunwood Farms sirloin or roast pork belly, plated -->
+          <!-- PHOTOGRAPHY: Dunwood Farms sirloin, plated. Homepage teaser crop, 3:2. -->
           <div class="sunday__img-wrap reveal">
             <picture>
-              <source srcset="assets/images/sunday-roast.avif" type="image/avif">
-              <source srcset="assets/images/sunday-roast.webp" type="image/webp">
+              <source srcset="assets/images/sunday-roast-teaser.avif" type="image/avif">
+              <source srcset="assets/images/sunday-roast-teaser.webp" type="image/webp">
               <img
-                src="assets/images/sunday-roast.jpg"
+                src="assets/images/sunday-roast-teaser.jpg"
                 alt="Sunday roast at The Reindeer Hoveringham, Dunwood Farms sirloin with roast potatoes, Yorkshire pudding and seasonal vegetables"
                 loading="lazy"
                 decoding="async"
-                width="720"
-                height="480"
+                width="1200"
+                height="800"
               >
             </picture>
           </div>
@@ -501,7 +502,7 @@
             <h2 id="sunday-heading">Sunday Lunch</h2>
 
             <p class="sunday__intro">Roasts are served every Sunday. Choose from dry-aged beef, roast pork belly, corn-fed chicken or wild mushroom pithivier, all served with roast potatoes, seasonal vegetables, Yorkshire pudding and rich gravy.</p>
-            <p class="sunday__service-line">Sunday Lunch from &pound;33</p>
+            <p class="sunday__service-line">Sunday Lunch from &pound;34</p>
 
             <div class="sunday__actions">
               <a href="/book/" class="btn btn--primary">Book Sunday Lunch</a>
@@ -764,10 +765,10 @@
         <div class="footer__col footer__col--brand">
           <span class="footer__heading">Address</span>
           <address class="footer__address">
-            Main Street, Hoveringham<br>
-            Nottinghamshire, NG14 7JR<br>
-            <a href="tel:+441159346071">0115 934 6071</a><br>
-            <a href="mailto:hello@reindeerpub.com">hello@reindeerpub.com</a>
+            <span data-site-text="address_line1">Main Street, Hoveringham</span><br>
+            <span data-site-text="address_line2">Nottinghamshire, NG14 7JR</span><br>
+            <a href="tel:+441159346071" data-site-text="phone_display" data-site-href="phone_href">0115 934 6071</a><br>
+            <a href="mailto:hello@reindeerpub.com" data-site-text="email" data-site-href="email_href">hello@reindeerpub.com</a>
           </address>
         </div>
 
@@ -776,10 +777,11 @@
           <span class="footer__heading">Opening Hours</span>
           <ul class="footer__hours" aria-label="Opening hours">
             <li>Mon &amp; Tue &middot; Bar 4&ndash;9pm</li>
-            <li>Wed &amp; Thu &middot; Bar 12&ndash;10pm &middot; Kitchen 12&ndash;3 &amp; 5&ndash;9pm</li>
+            <li>Wed &middot; Bar 12&ndash;10pm &middot; Kitchen 5&ndash;9pm</li>
+            <li>Thu &middot; Bar 12&ndash;10pm &middot; Kitchen 12&ndash;3 &amp; 5&ndash;9pm</li>
             <li>Fri &amp; Sat &middot; Bar 12&ndash;11pm &middot; Kitchen 12&ndash;3 &amp; 5&ndash;9pm</li>
             <li>Sun &middot; Bar 12&ndash;10pm &middot; Kitchen 12&ndash;6pm</li>
-            <li class="footer__hours-note">SHIO Terrace &middot; Thu&ndash;Sat 12&ndash;9pm &middot; Sun 12&ndash;6pm</li>
+            <li class="footer__hours-note">SHIO Terrace &middot; Thu&ndash;Sat 4&ndash;9pm</li>
           </ul>
         </div>
 
@@ -787,7 +789,7 @@
         <div class="footer__col footer__col--social">
           <span class="footer__heading">Follow Us</span>
           <div class="footer__social">
-            <a href="https://www.instagram.com/reindeerhoveringham" target="_blank" rel="noopener noreferrer" aria-label="The Reindeer on Instagram (opens in new tab)">
+            <a href="https://www.instagram.com/reindeerhoveringham" target="_blank" rel="noopener noreferrer" aria-label="The Reindeer on Instagram (opens in new tab)" data-site-href="instagram_url">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
                 <circle cx="12" cy="12" r="4.5"/>
@@ -795,7 +797,7 @@
               </svg>
               Instagram
             </a>
-            <a href="https://www.facebook.com/reindeerhoveringham" target="_blank" rel="noopener noreferrer" aria-label="The Reindeer on Facebook (opens in new tab)">
+            <a href="https://www.facebook.com/reindeerhoveringham" target="_blank" rel="noopener noreferrer" aria-label="The Reindeer on Facebook (opens in new tab)" data-site-href="facebook_url">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
               </svg>
@@ -821,7 +823,7 @@
 
       <div class="footer__bottom">
         <p class="footer__service-charge footer__service-charge--centred">
-          12.5% discretionary service charge applied to all bills and distributed in full to our team.
+          <span data-site-text="service_charge_percent">12</span>% discretionary service charge applied to all bills and distributed in full to our team.
           For allergies or dietary requirements, please <a href="/contact/">contact us</a> before visiting.
         </p>
         <div class="footer__legal-row">

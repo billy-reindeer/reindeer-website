@@ -7,6 +7,7 @@
  * 3. Scroll reveal (IntersectionObserver)
  * 4. Newsletter form (Netlify)
  * 5. Footer year
+ * 8. Site settings (CMS-driven: footer, homepage hero, gift voucher link)
  */
 
 (function () {
@@ -413,6 +414,58 @@
 
 
   /* ----------------------------------------------------------
+     8. SITE SETTINGS (CMS-driven)
+     Populates the footer, homepage hero, and gift voucher button
+     from /_data/site-settings.json (Decap CMS: Site Settings).
+     Targets elements via [data-site-text] / [data-site-href], so
+     new fields can be wired up later just by adding an attribute
+     and a JSON key, no JS changes required. Falls back silently
+     to the static HTML already on the page if the fetch fails.
+  ---------------------------------------------------------- */
+
+  function applySiteSettings(data) {
+    if (!data) return;
+
+    $$('[data-site-text]').forEach(function (el) {
+      var key = el.getAttribute('data-site-text');
+      if (typeof data[key] === 'string') el.textContent = data[key];
+    });
+
+    $$('[data-site-href]').forEach(function (el) {
+      var key = el.getAttribute('data-site-href');
+      if (typeof data[key] === 'string') el.href = data[key];
+    });
+
+    if (Array.isArray(data.hours) && data.hours.length) {
+      $$('.footer__hours').forEach(function (list) {
+        var frag = document.createDocumentFragment();
+        data.hours.forEach(function (h) {
+          if (!h || !h.line) return;
+          var li = document.createElement('li');
+          li.textContent = h.line;
+          frag.appendChild(li);
+        });
+        if (data.hours_note) {
+          var note = document.createElement('li');
+          note.className = 'footer__hours-note';
+          note.textContent = data.hours_note;
+          frag.appendChild(note);
+        }
+        list.innerHTML = '';
+        list.appendChild(frag);
+      });
+    }
+  }
+
+  function initSiteSettings() {
+    fetch('/_data/site-settings.json?t=' + Date.now())
+      .then(function (r) { if (!r.ok) throw new Error('fetch failed'); return r.json(); })
+      .then(applySiteSettings)
+      .catch(function () { /* keep the static fallback content already in the page */ });
+  }
+
+
+  /* ----------------------------------------------------------
      INIT
   ---------------------------------------------------------- */
 
@@ -425,6 +478,7 @@
     initNewsletterForm();
     initFooterYear();
     initCookieConsent();
+    initSiteSettings();
   });
 
 }());

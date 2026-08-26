@@ -20,6 +20,73 @@ media_folder: assets/images
 public_folder: /assets/images
 
 collections:
+  - name: site_settings
+    label: Site Settings
+    files:
+      - name: general
+        label: General Settings
+        file: _data/site-settings.json
+        description: "Sitewide settings. Changes here update every page automatically (footer, homepage, gift voucher button) with no code changes needed."
+        fields:
+          - label: Homepage Headline
+            name: hero_headline
+            widget: string
+            hint: "The big heading on the homepage, e.g. 'Bar Now Open'."
+          - label: Homepage Subtext
+            name: hero_subtext
+            widget: string
+            hint: "The line underneath the homepage headline."
+          - label: Service Charge (%)
+            name: service_charge_percent
+            widget: string
+            hint: "Number only, no % sign, e.g. 12. Shown in the footer on every page."
+          - label: Gift Voucher Purchase Link
+            name: gift_voucher_url
+            widget: string
+            hint: "The Toast e-gift card link used by the 'Buy a Gift Voucher' button."
+          - label: Phone Number (displayed)
+            name: phone_display
+            widget: string
+            hint: "e.g. 0115 934 6071"
+          - label: Phone Number (link)
+            name: phone_href
+            widget: string
+            hint: "The tel: link used when someone taps the number, e.g. tel:+441159346071"
+          - label: Email Address (displayed)
+            name: email
+            widget: string
+          - label: Email Address (link)
+            name: email_href
+            widget: string
+            hint: "The mailto: link used when someone taps the email, e.g. mailto:hello@reindeerpub.com"
+          - label: Address Line 1
+            name: address_line1
+            widget: string
+          - label: Address Line 2
+            name: address_line2
+            widget: string
+          - label: Instagram URL
+            name: instagram_url
+            widget: string
+            hint: "Shown as the Instagram icon in the footer."
+          - label: Facebook URL
+            name: facebook_url
+            widget: string
+            hint: "Shown as the Facebook icon in the footer."
+          - label: Opening Hours
+            name: hours
+            widget: list
+            label_singular: Line
+            summary: "{{fields.line}}"
+            hint: "Each line appears in the footer, in order. Add, remove, or reorder lines as needed, e.g. for a bank holiday change."
+            fields:
+              - { label: Line, name: line, widget: string, hint: "e.g. Mon & Tue · Bar 4–9pm" }
+          - label: Opening Hours Note
+            name: hours_note
+            widget: string
+            required: false
+            hint: "Shown as a smaller note under the hours, e.g. SHIO Terrace hours. Leave blank to hide."
+
   - name: events
     label: Events
     files:
@@ -73,6 +140,16 @@ collections:
         file: _data/sunday-lunch.json
         description: "The Sunday lunch menu. Course names (Starters, Mains, Puddings) are shown to guests."
         fields:
+          - label: Set Menu Pricing
+            name: price_note
+            widget: list
+            label_singular: Price Option
+            summary: "{{fields.label}} — £{{fields.price}}"
+            required: false
+            hint: "Shown at the top of the page, e.g. '2 courses' / '34' and '3 courses' / '40'."
+            fields:
+              - { label: Label, name: label, widget: string, hint: "e.g. 2 courses" }
+              - { label: Price, name: price, widget: string, hint: "e.g. 34 (no pound sign needed)" }
           - label: Courses
             name: courses
             widget: list
@@ -80,6 +157,7 @@ collections:
             summary: "{{fields.name}} ({{fields.items.length}} dishes)"
             fields:
               - { label: Course Name, name: name, widget: string, hint: "Shown to guests as a heading, e.g. Starters." }
+              - { label: Note, name: note, widget: text, required: false, hint: "Optional note shown under the heading, e.g. what roast dinners are served with." }
               - label: Dishes
                 name: items
                 widget: list
@@ -89,7 +167,7 @@ collections:
                 fields:
                   - { label: Dish Name, name: name, widget: string }
                   - { label: Description, name: description, widget: text, required: false }
-                  - { label: Price, name: price, widget: string, hint: "e.g. 16.00 (no pound sign needed)" }
+                  - { label: Price, name: price, widget: string, required: false, hint: "e.g. 16.00 (no pound sign needed). Leave blank if included in the set price." }
 
   - name: drinks
     label: Drinks

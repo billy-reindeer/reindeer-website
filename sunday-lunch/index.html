@@ -21,7 +21,7 @@
 
   <link rel="preload" href="/assets/fonts/alike-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/alike-angular-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/assets/images/sunday-lunch-hero.jpg" as="image">
+  <link rel="preload" href="/assets/images/sunday-lunch-plate.jpg" as="image">
   <link rel="stylesheet" href="/css/style.css">
 
   <script type="application/ld+json">
@@ -170,16 +170,16 @@
             <p>The kitchen closes at 6pm on Sundays. We do not take walk-ins after 5:30pm, so booking ahead is the sensible thing to do.</p>
           </div>
         </div>
-        <!-- PLACEHOLDER IMAGE: terrace-wide.jpg used until shoot delivers sunday-lunch-hero.jpg (terrace, cricket ground). See PHOTOGRAPHY_BRIEF.md 3.5 -->
+        <!-- PHOTOGRAPHY: plated Sunday roast, contained box beside the intro text (not the SEO-page hero pattern). 4:3 crop. -->
         <div class="split-hero__media">
           <picture>
-            <source srcset="/assets/images/terrace-wide.avif" type="image/avif">
-            <source srcset="/assets/images/terrace-wide.webp" type="image/webp">
+            <source srcset="/assets/images/sunday-lunch-plate.avif" type="image/avif">
+            <source srcset="/assets/images/sunday-lunch-plate.webp" type="image/webp">
             <img
-              src="/assets/images/terrace-wide.jpg"
-              alt="The terrace at The Reindeer Hoveringham on a Sunday afternoon"
-              width="800"
-              height="600"
+              src="/assets/images/sunday-lunch-plate.jpg"
+              alt="Sunday roast at The Reindeer Hoveringham, roast stuffed pork belly with roast potatoes, Yorkshire pudding and seasonal vegetables"
+              width="1400"
+              height="1050"
               fetchpriority="high">
           </picture>
         </div>
@@ -193,6 +193,9 @@
 
           <h2 id="sl-menu-heading" class="sr-only">Sunday Lunch Menu</h2>
 
+          <!-- Set menu pricing rendered from /_data/sunday-lunch.json (price_note). Sits above the courses. -->
+          <div id="sl-price-note" aria-live="polite"></div>
+
           <!-- Courses rendered from /_data/sunday-lunch.json via fetch. Managed in Decap CMS (Menu > Sunday Lunch Menu). -->
           <div id="sl-menu-container" aria-busy="true" aria-live="polite"></div>
 
@@ -204,16 +207,17 @@
       </div>
     </section>
 
-    <!-- Feature image -->
+    <!-- Feature image: fixed 2:1 letterbox banner, needs a plated roast composed
+         with headroom above/below so the crop doesn't touch the plate. -->
     <div class="sl-feature" aria-hidden="true">
       <picture>
-        <source srcset="/assets/images/sunday-roast.avif" type="image/avif">
-        <source srcset="/assets/images/sunday-roast.webp" type="image/webp">
+        <source srcset="/assets/images/sunday-roast-banner.avif" type="image/avif">
+        <source srcset="/assets/images/sunday-roast-banner.webp" type="image/webp">
         <img
-          src="/assets/images/sunday-roast.jpg"
+          src="/assets/images/sunday-roast-banner.jpg"
           alt=""
-          width="1440"
-          height="480"
+          width="2400"
+          height="1200"
           loading="lazy">
       </picture>
     </div>
@@ -244,30 +248,31 @@
         <div class="footer__col footer__col--brand">
           <span class="footer__heading">Address</span>
           <address class="footer__address">
-            Main Street, Hoveringham<br>
-            Nottinghamshire, NG14 7JR<br>
-            <a href="tel:+441159346071">0115 934 6071</a><br>
-            <a href="mailto:hello@reindeerpub.com">hello@reindeerpub.com</a>
+            <span data-site-text="address_line1">Main Street, Hoveringham</span><br>
+            <span data-site-text="address_line2">Nottinghamshire, NG14 7JR</span><br>
+            <a href="tel:+441159346071" data-site-text="phone_display" data-site-href="phone_href">0115 934 6071</a><br>
+            <a href="mailto:hello@reindeerpub.com" data-site-text="email" data-site-href="email_href">hello@reindeerpub.com</a>
           </address>
         </div>
         <div class="footer__col footer__col--hours">
           <span class="footer__heading">Opening Hours</span>
           <ul class="footer__hours" aria-label="Opening hours">
             <li>Mon &amp; Tue &middot; Bar 4&ndash;9pm</li>
-            <li>Wed &amp; Thu &middot; Bar 12&ndash;10pm &middot; Kitchen 12&ndash;3 &amp; 5&ndash;9pm</li>
+            <li>Wed &middot; Bar 12&ndash;10pm &middot; Kitchen 5&ndash;9pm</li>
+            <li>Thu &middot; Bar 12&ndash;10pm &middot; Kitchen 12&ndash;3 &amp; 5&ndash;9pm</li>
             <li>Fri &amp; Sat &middot; Bar 12&ndash;11pm &middot; Kitchen 12&ndash;3 &amp; 5&ndash;9pm</li>
             <li>Sun &middot; Bar 12&ndash;10pm &middot; Kitchen 12&ndash;6pm</li>
-            <li class="footer__hours-note">SHIO Terrace &middot; Thu&ndash;Sat 12&ndash;9pm &middot; Sun 12&ndash;6pm</li>
+            <li class="footer__hours-note">SHIO Terrace &middot; Thu&ndash;Sat 4&ndash;9pm</li>
           </ul>
         </div>
         <div class="footer__col footer__col--social">
           <span class="footer__heading">Follow Us</span>
           <div class="footer__social">
-            <a href="https://www.instagram.com/reindeerhoveringham" target="_blank" rel="noopener noreferrer" aria-label="The Reindeer on Instagram (opens in new tab)">
+            <a href="https://www.instagram.com/reindeerhoveringham" target="_blank" rel="noopener noreferrer" aria-label="The Reindeer on Instagram (opens in new tab)" data-site-href="instagram_url">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
               Instagram
             </a>
-            <a href="https://www.facebook.com/reindeerhoveringham" target="_blank" rel="noopener noreferrer" aria-label="The Reindeer on Facebook (opens in new tab)">
+            <a href="https://www.facebook.com/reindeerhoveringham" target="_blank" rel="noopener noreferrer" aria-label="The Reindeer on Facebook (opens in new tab)" data-site-href="facebook_url">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
               Facebook
             </a>
@@ -289,7 +294,7 @@
 
       <div class="footer__bottom">
         <p class="footer__service-charge footer__service-charge--centred">
-          12.5% discretionary service charge applied to all bills and distributed in full to our team.
+          <span data-site-text="service_charge_percent">12</span>% discretionary service charge applied to all bills and distributed in full to our team.
           For allergies or dietary requirements, please <a href="/contact/">contact us</a> before visiting.
         </p>
         <div class="footer__legal-row">
@@ -318,6 +323,7 @@
   <script>
   (function () {
     var container = document.getElementById('sl-menu-container');
+    var priceNoteContainer = document.getElementById('sl-price-note');
     if (!container) return;
 
     function escapeHtml(str) {
@@ -349,6 +355,21 @@
       return html;
     }
 
+    function renderPriceNote(priceNote) {
+      if (!priceNoteContainer || !Array.isArray(priceNote) || !priceNote.length) return;
+      var html = '<div class="sl-price-note">';
+      priceNote.forEach(function (option) {
+        html += '<div class="sl-item">';
+        html += '<div><span class="sl-item__name">' + escapeHtml(option.label) + '</span></div>';
+        if (option.price) {
+          html += '<span class="sl-item__price">' + price(option.price) + '</span>';
+        }
+        html += '</div>';
+      });
+      html += '</div>';
+      priceNoteContainer.innerHTML = html;
+    }
+
     function renderMenu(courses) {
       container.setAttribute('aria-busy', 'false');
 
@@ -367,6 +388,9 @@
         if (!course.items || !course.items.length) return;
         html += '<div class="sl-course">';
         html += '<h3 class="sl-course__heading">' + escapeHtml(course.name) + '</h3>';
+        if (course.note) {
+          html += '<p class="sl-course__note">' + escapeHtml(course.note) + '</p>';
+        }
         course.items.forEach(function (item) {
           html += renderItem(item);
         });
@@ -377,7 +401,10 @@
 
     fetch('/_data/sunday-lunch.json?t=' + Date.now())
       .then(function (r) { if (!r.ok) throw new Error('fetch failed'); return r.json(); })
-      .then(function (data) { renderMenu(Array.isArray(data.courses) ? data.courses : []); })
+      .then(function (data) {
+        renderPriceNote(data.price_note);
+        renderMenu(Array.isArray(data.courses) ? data.courses : []);
+      })
       .catch(function () {
         container.setAttribute('aria-busy', 'false');
         container.innerHTML =
