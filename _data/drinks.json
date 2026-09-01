@@ -31,7 +31,8 @@
         },
         {
           "name": "Plum and shiso margarita",
-          "producer": "Blanco tequila, English plum, orange liqueur, lime, shiso"
+          "producer": "",
+          "description": "Blanco tequila, English plum, orange liqueur, lime, shiso"
         },
         {
           "name": "Orchard spritz",
@@ -39,7 +40,8 @@
         },
         {
           "name": "Blackberry and sage sour",
-          "producer": "Hendrick's gin, blackberry, sage, lemon, egg white"
+          "producer": "",
+          "description": "Hendrick's gin, blackberry, sage, lemon, egg white"
         },
         {
           "name": "Passionfruit martini ",
