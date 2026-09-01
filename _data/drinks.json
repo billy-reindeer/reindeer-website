@@ -110,7 +110,44 @@
     {
       "name": "Beer & Cider",
       "format": "list",
-      "items": []
+      "items": [
+        {
+          "name": "Birra Moretti 4.6%"
+        },
+        {
+          "name": "Staropramen 5%"
+        },
+        {
+          "name": "Cruzcampo 4.4%"
+        },
+        {
+          "name": "Salt Felt Peach Lager 4%"
+        },
+        {
+          "name": "Guinness Stout 4.1%"
+        },
+        {
+          "name": "Heineken 0%"
+        },
+        {
+          "name": "Batemans XB 3.7%"
+        },
+        {
+          "name": "Blue Monkey BG Sips 4%"
+        },
+        {
+          "name": "Inches Apple Cider 4.5%"
+        },
+        {
+          "name": "Old Mout Berries & Cherries 3.4%"
+        },
+        {
+          "name": "Old Mout Kiwi & Lime 3.4%"
+        },
+        {
+          "name": "Old Mout Pineapple & Raspberry 3.4%"
+        }
+      ]
     },
     {
       "name": "Spirits",
