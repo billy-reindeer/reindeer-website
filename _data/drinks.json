@@ -1,17 +1,6 @@
 {
   "sections": [
     {
-      "name": "Wine",
-      "format": "wine",
-      "items": [
-        {
-          "name": "Canyon Road Pinot Grigio ",
-          "glass": "5 | 6.9 | 8.4",
-          "bottle": "26"
-        }
-      ]
-    },
-    {
       "name": "Cocktails",
       "format": "list",
       "items": [
@@ -42,6 +31,17 @@
         {
           "name": "Espresso martini ",
           "description": "Absolut vodka, Mr Blacks coffee liqueur, espresso "
+        }
+      ]
+    },
+    {
+      "name": "Wine",
+      "format": "wine",
+      "items": [
+        {
+          "name": "Canyon Road Pinot Grigio ",
+          "glass": "5 | 6.9 | 8.4",
+          "bottle": "26"
         }
       ]
     },
