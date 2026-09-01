@@ -150,14 +150,78 @@
       ]
     },
     {
-      "name": "Spirits",
-      "format": "list",
-      "items": []
-    },
-    {
       "name": "Soft Drinks",
       "format": "list",
-      "items": []
+      "items": [
+        {
+          "name": "Pepsi"
+        },
+        {
+          "name": "Pepsi Max"
+        },
+        {
+          "name": "Lemonade"
+        },
+        {
+          "name": "Soda"
+        },
+        {
+          "name": "Britvic Orange Juice"
+        },
+        {
+          "name": "Britvic Apple Juice"
+        },
+        {
+          "name": "Folkingtons Pineapple"
+        },
+        {
+          "name": "Folkingtons Summer Berries"
+        },
+        {
+          "name": "Appletiser"
+        },
+        {
+          "name": "Belvior Ginger Beer"
+        },
+        {
+          "name": "Belvoir Raspberry Lemonade"
+        }
+      ]
+    },
+    {
+      "name": "Hot drinks",
+      "format": "list",
+      "items": [
+        {
+          "name": "Espresso",
+          "price": "2.8"
+        },
+        {
+          "name": "Double Espresso",
+          "glass": "",
+          "price": "3.2"
+        },
+        {
+          "name": "Americano",
+          "price": "3.2"
+        },
+        {
+          "name": "Flat white",
+          "price": "3.5"
+        },
+        {
+          "name": "Cappuccino",
+          "price": "3.6"
+        },
+        {
+          "name": "Latte",
+          "price": "3.6"
+        },
+        {
+          "name": "Hot Chocolate",
+          "price": "3.8"
+        }
+      ]
     }
   ]
 }
