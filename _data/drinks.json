@@ -39,9 +39,71 @@
       "format": "wine",
       "items": [
         {
-          "name": "Canyon Road Pinot Grigio ",
-          "glass": "5 | 6.9 | 8.4",
+          "name": "Last Stand Chardonnay",
+          "glass": "4.9 | 6.9 | 8.4",
           "bottle": "26"
+        },
+        {
+          "name": "La Lancelotta Gavi",
+          "glass": "6.9 | 9.2 | 11.9",
+          "bottle": "34"
+        },
+        {
+          "name": "Honu Sauvignon Blanc",
+          "glass": "6.2 | 8.5 | 11.2",
+          "bottle": "32"
+        },
+        {
+          "name": "Domaine Chanson Chablis",
+          "bottle": "70"
+        },
+        {
+          "name": "Record Sun Shiraz",
+          "glass": "6.2 | 6.5 | 11",
+          "bottle": "26"
+        },
+        {
+          "name": "Valbello Primitivo ",
+          "glass": "5.4 | 7.2 | 9.4",
+          "bottle": "25"
+        },
+        {
+          "name": "Petirrojo Merlot",
+          "glass": "5.9 | 7.9 | 10.2 ",
+          "bottle": "29"
+        },
+        {
+          "name": "Turno de Noche Malbec",
+          "glass": "6.4 | 8.5 | 10.9",
+          "bottle": "30"
+        },
+        {
+          "name": "Baron des Chartrons St Emilion ",
+          "bottle": "45"
+        },
+        {
+          "name": "Principato Pinot Grigio Blush",
+          "glass": "5.6 | 7.6 | 9.9",
+          "bottle": "27"
+        },
+        {
+          "name": "Canyon Road White Zinfandel",
+          "glass": "5.7 | 7.7 | 10 ",
+          "bottle": "28"
+        },
+        {
+          "name": "Lunetta Prosecco Rose (20cl)",
+          "bottle": "10.5"
+        },
+        {
+          "name": "Italia Prosecco DOC",
+          "glass": "7.95",
+          "bottle": "39.9"
+        },
+        {
+          "name": "Moet Imperial Champagne ",
+          "price": "",
+          "bottle": "80"
         }
       ]
     },
