@@ -3,7 +3,13 @@
     {
       "name": "Wine",
       "format": "wine",
-      "items": []
+      "items": [
+        {
+          "name": "Canyon Road Pinot Grigio ",
+          "glass": "5 | 6.9 | 8.4",
+          "bottle": "26"
+        }
+      ]
     },
     {
       "name": "Cocktails",
