@@ -7,17 +7,18 @@
       "title": "Beaujolais Day",
       "date": "2026-11-19",
       "time": "12:00pm",
-      "description": "Reindeer & friends invite you to join us for A Very British Beaujolais Day - a long lunch bringing everyone together for an Anglo-French feast, Beaujolais, live music, entertainment & great company.\n\nExpect Cheddar & ale onion soup with English black winter truffle, followed by roast Staffordshire beef with clotted cream pomme purée, honey-glazed carrots, winter vegetables & Beaujolais jus - or a wild mushroom pithivier for our vegetarian guests.\n\nTo finish, enjoy a selection of cheeses from both sides of the Channel, alongside plenty of Beaujolais for the table.\n\nThere’ll also be live music, entertainment and raffle prizes.\n\nThursday 19 November, from 12 noon | £69pp\n\nIn support of Maggie’s at City Hospital, with every ticket helping to support people with cancer and their families.\n\nEveryone is welcome - bring your friends, come hungry and raise a glass! 🍷\n\nTables available for 2–8 people, with singles very welcome too.\n\nTickets are limited, so get your table together and join us for Beaujolais Day at The Reindeer.",
+      "description": "Reindeer & friends invite you to join us for A Very British Beaujolais Day - a long lunch bringing everyone together for an Anglo-French feast, Beaujolais, live music, entertainment & great company.\n\nIn support of Maggie’s at City Hospital, with every ticket helping to support people with cancer and their families.\n",
       "image": "/assets/images/untitled-design-45-.png"
     },
     {
       "cta_label": "Book a table",
-      "cta_url": "/book/",
-      "featured": false,
-      "title": "Beaujolais Day II",
-      "date": "2026-09-15",
-      "time": "12pm",
-      "description": "Reindeer & friends invite you to join us for A Very British Beaujolais Day, a long lunch bringing everyone together for an Anglo-French feast, Beaujolais, live music, entertainment & great company. "
+      "cta_url": "https://tables.toasttab.com/the-reindeer-main-street/experience/omakase-tasting-experience",
+      "featured": true,
+      "title": "Omakase Tasting Experience",
+      "date": "2027-12-02",
+      "time": "7:00PM",
+      "description": "Join us at The Reindeer on Wednesday 2 December at 7pm for an Omakase Tasting Experience with SHIO.\n\nExpect a set tasting menu of Japanese dishes served course by course, from sashimi and nigiri to SHIO’s special maki roll, with a miso custard tart to finish.\n\n£80 per person, with an optional drinks pairing for £35.\n\nLimited spaces available. Get booked in.",
+      "image": "/assets/images/whatsapp-image-2026-10-20-at-15.45.34.jpeg"
     }
   ]
 }
