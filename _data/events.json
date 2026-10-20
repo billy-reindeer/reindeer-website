@@ -9,6 +9,16 @@
       "time": "12:00pm",
       "description": "Reindeer & friends invite you to join us for A Very British Beaujolais Day - a long lunch bringing everyone together for an Anglo-French feast, Beaujolais, live music, entertainment & great company.\n\nIn support of Maggie’s at City Hospital, with every ticket helping to support people with cancer and their families.\n",
       "image": "/assets/images/untitled-design-45-.png"
+    },
+    {
+      "cta_label": "Book a table",
+      "cta_url": "/book/",
+      "featured": false,
+      "title": "Omakase Tasting Experience",
+      "date": "2027-12-02",
+      "time": "7:00PM",
+      "description": "Join us at The Reindeer on Wednesday 2 December at 7pm for an Omakase Tasting Experience with SHIO.\n\nExpect a set tasting menu of Japanese dishes served course by course, from sashimi and nigiri to SHIO’s special maki roll, with a miso custard tart to finish.\n\n£80 per person, with an optional drinks pairing for £35.\n\nLimited spaces available. Get booked in.",
+      "image": "/assets/images/whatsapp-image-2026-10-20-at-15.45.34.jpeg"
     }
   ]
 }
