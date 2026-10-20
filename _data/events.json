@@ -12,8 +12,8 @@
     },
     {
       "cta_label": "Book a table",
-      "cta_url": "/book/",
-      "featured": false,
+      "cta_url": "https://tables.toasttab.com/the-reindeer-main-street/experience/omakase-tasting-experience",
+      "featured": true,
       "title": "Omakase Tasting Experience",
       "date": "2027-12-02",
       "time": "7:00PM",
