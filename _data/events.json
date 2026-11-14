@@ -2,16 +2,6 @@
   "events": [
     {
       "cta_label": "Book a table",
-      "cta_url": "https://tables.toasttab.com/the-reindeer-main-street/experience/beaujolais-day",
-      "featured": true,
-      "title": "Beaujolais Day",
-      "date": "2026-11-19",
-      "time": "12:00pm",
-      "description": "Reindeer & friends invite you to join us for A Very British Beaujolais Day - a long lunch bringing everyone together for an Anglo-French feast, Beaujolais, live music, entertainment & great company.\n\nIn support of Maggie’s at City Hospital, with every ticket helping to support people with cancer and their families.\n",
-      "image": "/assets/images/untitled-design-45-.png"
-    },
-    {
-      "cta_label": "Book a table",
       "cta_url": "https://tables.toasttab.com/the-reindeer-main-street/experience/omakase-tasting-experience",
       "featured": true,
       "title": "Omakase Tasting Experience",
